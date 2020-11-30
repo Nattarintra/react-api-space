@@ -1,0 +1,34 @@
+.wrapper {
+  height: 100vh;
+}
+.titile {
+  text-align: center;
+}
+.image img {
+  width: 100%;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.equal {
+  padding: 20px;
+}
+.sp-padding {
+  padding: 5px;
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .content-wrapper {
+    flex-direction: row;
+  }
+  .equal {
+    flex: 1 1 0;
+    width: 0;
+  }
+
+  .contents-inner {
+    margin: 20px 0 0 0;
+  }
+}
