@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 //import NasaPhoto from "./NasaPhoto"
 import Earth from "./Earth"
 import Mars from "./Mars"
