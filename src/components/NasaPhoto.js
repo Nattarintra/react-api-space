@@ -8,7 +8,8 @@ function NasaPhoto() {
     fetchPhoto()
     async function fetchPhoto() {
       try {
-        const response = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_KEY}`)
+        // const response = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_KEY}`)
+        const response = await Axios.get(`https://api.nasa.gov/planetary/apod?api_key=jwgnQw3JhJUnIVoJvbHlKvOAA6wSKRNJ8ejpiLuZ`)
         setPhoto(response.data)
       } catch (e) {
         console.log(e)
@@ -39,7 +40,7 @@ function NasaPhoto() {
               <p className="sp-padding">
                 {" "}
                 <strong>Copyright:</strong>
-                {photo.copyright === "null" ? " " : photo.copyright}
+                {photo.copyright}
               </p>
             </div>
           </div>
